@@ -60,8 +60,8 @@ body{
     height: 438px;
 }
 .banner-thumbnail:hover img{
-    margin-top: 100px;
-    transform:  translate(3em) rotate(30deg) scale(1.2) ;
+    margin-top: 150px;
+    transform:  translate(3em) rotate(30deg) scale(1.1) ;
     transition: transform 2.5s ease;
     cursor: pointer;
 }
