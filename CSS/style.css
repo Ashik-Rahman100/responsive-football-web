@@ -228,7 +228,7 @@ body{
     tablet devices 
     -----------------*/
 
-    @media only screen and (min-width : 689px) and (max-width: 992px) {
+    @media only screen and (min-width : 689px) and (max-width: 991px) {
        
        .top-banner{
            flex-direction: column;
@@ -279,7 +279,4 @@ body{
        }
     }
 
-    /* ---------------
-       Large Devices
-       ----------------- */
-       
+   
