@@ -7,6 +7,7 @@ body{
 .container{
     background-color: #ffffff;
     
+    
 }
 /* top banner */
 .top-banner{
@@ -158,47 +159,40 @@ body{
     mobile-devices
     ------------------ */
 
-    @media only screen and (max-width:668px) {
+    @media only screen and  (max-width: 668px) {
         /* top-banner */
         .top-banner{
-            
-            flex-direction: column;
-            margin-top: 30px;
-            margin-right:10px; 
+            width: 100%;
+            height: 600px;
+            flex-direction: column; 
         }
-        .banner-info{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            margin-top: 120px;
-            font-size: 30px;
-        }
+
         .banner-info h1{
-            margin: 0px;
+            font-size: 30px;
+            margin-top: 120px;
         }
-       
-        .live-link{
-            width: 120px;
-            padding: 10px 24px;
-            font-size: 16px;
-            padding-top: 15px;
-            
+        .banner-info a {
+            margin-bottom: ;
         }
         .banner-thumbnail{
             overflow: visible;
-            margin-right: 250px;
         }
         .banner-thumbnail img{
-            margin-top: 50px;
+            margin-top:50px ;
             width: 329px;
             height: 259.17px;
-            
-            
         }
+
         /* top-players */
         .players{
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        .player{
+            width: 300px;
+            height: 426px;
+           
         }
         
         /*  highlight section*/
@@ -208,18 +202,84 @@ body{
             align-items: center;
             margin-top: -120px;   
         }
+        .highlight-info{
+           margin-right: 0 ;
+           padding: 15px;
+           align-items: center;
+        }
         .highlight-info p{
             margin-bottom: 24px;
         }
-        .highlight-thumbnail{
-            margin-left: 148px;
-            margin-top: -50px;
+        .highlight-thumbnail img{
+            width: 328px;
+            height: 248px;
+            margin-left: 150px;
         }
         .footer-section{
             margin-top: -60px;
         }
+        .football-logo img{
+           width: 320px;
+           height: 63px;
     }
-    
+}
 
 /* ---------------
-    */
+    tablet devices 
+    -----------------*/
+
+    @media only screen and (min-width : 689px) and (max-width: 992px) {
+       
+       .top-banner{
+           flex-direction: column;
+           align-items: center;
+           width: 1024px;
+           height: 768px;
+       }
+       .banner-info{
+           margin: 70px 0px  0px 100px;
+       }
+       .banner-thumbnail{
+          overflow: visible;
+       }
+       .banner-thumbnail img {
+        width: 500px;
+        height: 370px;
+           margin-left: 400px;
+       }
+       
+       .players{
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           margin-left: 180px;
+       }
+       .player{
+        width: 300px;
+        height: 426px;
+       }
+       .banner{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+       }
+       .highlight-info{
+           margin-top: 0px;
+       }
+      .highlight-thumbnail img{
+           margin-top: 0px;
+           margin-left: 250px;
+           
+       }
+       .footer-section {
+           margin: 0 0 0 200px;
+           display: grid;
+           grid-template-columns: repeat(1, 1fr);
+       }
+       .social-icon,.copyright-text{
+           margin-left: 200px;
+       }
+    }
+
+    /* ---------------
+       Large Devices
+       ----------------- */
+       
