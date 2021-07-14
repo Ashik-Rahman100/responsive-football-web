@@ -159,28 +159,31 @@ body{
     mobile-devices
     ------------------ */
 
-    @media only screen and  (max-width: 668px) {
+    @media only screen and (min-width: 0px) and  (max-width: 668px) {
         /* top-banner */
         .top-banner{
-            width: 100%;
-            height: 600px;
             flex-direction: column; 
+            height: 629px;
         }
-
+        .banner-info{
+            margin-left: 0;
+        }
         .banner-info h1{
-            font-size: 30px;
-            margin-top: 120px;
+            font-size: 36px;
+            margin-top: 45%;
+            margin-bottom: 5%;
         }
-        .banner-info a {
-            margin-bottom: ;
-        }
+        
         .banner-thumbnail{
             overflow: visible;
+            
         }
         .banner-thumbnail img{
             margin-top:50px ;
-            width: 329px;
-            height: 259.17px;
+            width: 100%;
+            height: 100%;
+           margin-left: 0;
+
         }
 
         /* top-players */
@@ -203,8 +206,8 @@ body{
             margin-top: -120px;   
         }
         .highlight-info{
-           margin-right: 0 ;
-           padding: 15px;
+          margin-left: 10%;
+           
            align-items: center;
         }
         .highlight-info p{
@@ -229,54 +232,110 @@ body{
     -----------------*/
 
     @media only screen and (min-width : 689px) and (max-width: 991px) {
-       
+        body{
+            margin: 0;
+        }
        .top-banner{
-           flex-direction: column;
-           align-items: center;
-           width: 1024px;
+           display: grid;
+           grid-template-columns: repeat(1,1fr);
            height: 768px;
-       }
-       .banner-info{
-           margin: 70px 0px  0px 100px;
+           margin-left: 20%;
        }
        .banner-thumbnail{
           overflow: visible;
        }
        .banner-thumbnail img {
-        width: 500px;
-        height: 370px;
-           margin-left: 400px;
+        width: 100%;
+        height: 60%;
+        margin-left: 50%;
+        margin-top: 40px;
+           
        }
-       
        .players{
            display: grid;
            grid-template-columns: repeat(2,1fr);
-           margin-left: 180px;
+           margin-right: 2%;
        }
        .player{
-        width: 300px;
-        height: 426px;
+        
+        
+        margin-right: 16px;
        }
        .banner{
             display: grid;
             grid-template-columns: repeat(1,1fr);
+            margin-left: 10%;
        }
        .highlight-info{
-           margin-top: 0px;
+           margin: 0 20% 5% 10%;
        }
+       
       .highlight-thumbnail img{
            margin-top: 0px;
-           margin-left: 250px;
+           margin-left: 15%;
            
        }
        .footer-section {
-           margin: 0 0 0 200px;
+           margin-left: 25%;
            display: grid;
            grid-template-columns: repeat(1, 1fr);
        }
        .social-icon,.copyright-text{
-           margin-left: 200px;
+        margin-left: 30%;
        }
     }
 
+   /* larrge devices */
+   @media only screen and (min-width:992) and (max-width: 1312px){
+    body{
+        margin: 0;
+    }
+   .top-banner{
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       height: 768px;
+       margin-left: 20%;
+   }
+   .banner-thumbnail{
+      overflow: visible;
+   }
+   .banner-thumbnail img {
+    width: 100%;
+    height: 60%;
+    margin-left: 50%;
+    margin-top: 40px;
+       
+   }
+   .players{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       margin-right: 2%;
+   }
+   .player{
+    
+    
+    margin-right: 16px;
+   }
+   .banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 10%;
+   }
+   .highlight-info{
+       margin: 0 20% 5% 10%;
+   }
    
+  .highlight-thumbnail img{
+       margin-top: 0px;
+       margin-left: 15%;
+       
+   }
+   .footer-section {
+       margin-left: 25%;
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+   }
+   .social-icon,.copyright-text{
+    margin-left: 30%;
+   }
+   }
