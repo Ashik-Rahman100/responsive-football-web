@@ -157,6 +157,7 @@ body{
         .top-banner{
             flex-direction: column; 
             height: 629px;
+            width: 100%;
         }
         .banner-info{
             margin-left: 0;
@@ -176,20 +177,17 @@ body{
             height: 80%;
             margin-left: 0;
             margin-right: 20%;
-
         }
 
         /* top-players */
         .players{
             display: grid;
             grid-template-columns: repeat(1,1fr);
-            margin-right: 0px;
+            margin-left: 5%;
         }
         .player{
             width: 300px;
             height: 426px;
-            
-           
         }
         
         /*  highlight section*/
@@ -200,7 +198,8 @@ body{
             margin-top: -120px;   
         }
         .highlight-info{
-          margin-left: 20%;
+            margin-right: 15%;
+            margin-left: 5%;
            
            align-items: center;
         }
@@ -210,11 +209,14 @@ body{
         .highlight-thumbnail img{
             width: 328px;
             height: 248px;
-            margin-left: 150px;
+            margin-left: 12%;
+            
         }
         /* footer section */
         .footer-section{
             margin-top: -60px;
+            margin-left: 0;
+            margin-right: 20%;
         }
         .football-logo img{
            width: 320px;
@@ -230,6 +232,7 @@ body{
         /* common */
         body{
             margin: 0;
+            width: 100%;
             
         }
         /* top banner */
@@ -237,7 +240,8 @@ body{
            display: grid;
            grid-template-columns: repeat(1,1fr);
            height: 768px;
-           width: 100%;
+           margin-left: 0;
+           
            
        }
        .banner-thumbnail{
@@ -250,21 +254,25 @@ body{
         margin-top: 40px;
            
        }
+       .banner-thumbnail:hover img{
+           display: none;
+       }
        /* top player */
        .players{
            display: grid;
            grid-template-columns: repeat(2,1fr);
-           margin-left: 2%;
+           margin-left: 0%;
+           margin-right: 10%;
        }
        .player{
-        
+        width: 85%;
         margin-left: 0;
        }
        /* highlights part */
        .banner{
             display: grid;
             grid-template-columns: repeat(1,1fr);
-            margin-left: 10%;
+            
        }
        .highlight-info{
            margin: 0 20% 5% 10%;
@@ -272,12 +280,12 @@ body{
        
       .highlight-thumbnail img{
            margin-top: 0px;
-           margin-left: 15%;
+           margin-left: 7%;
            
        }
        /* footer section */
        .footer-section {
-           margin-left: 25%;
+           
            display: grid;
            grid-template-columns: repeat(1, 1fr);
        }
